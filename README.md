@@ -29,3 +29,8 @@ To test that everything is OK, we are going to install the Kibana, to do that, r
 ## Testing Kibana installation
 
 `kubectl port-forward $(kubectl get pod | grep kibana | cut -d ' ' -f 1) 5601:5601`
+
+# Cleanup
+
+`helm delete kibana`
+`helm reset`
