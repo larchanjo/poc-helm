@@ -1,14 +1,22 @@
 # Overview
 
+# Prerequisites
+
+The following prerequisites are required for a successful and properly secured use of Helm.
+
+1. A Kubernetes cluster
+2. Deciding what security configurations to apply to your installation, if any
+3. Installing and configuring Helm.
+
 # Setup
 
-1. Create Service Account
+Create Service Account
 
 `kubectl -n kube-system create serviceaccount tiller`
 
 `kubectl create clusterrolebinding tiller --clusterrole=cluster-admin --serviceaccount=kube-system:tiller`
 
-2. Install the Helm Tiller
+Install the Helm Tiller
 
 `helm init --service-account tiller`
 
