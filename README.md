@@ -33,4 +33,5 @@ To test that everything is OK, we are going to install the Kibana, to do that, r
 # Cleanup
 
 `helm delete kibana`
+
 `helm reset`
